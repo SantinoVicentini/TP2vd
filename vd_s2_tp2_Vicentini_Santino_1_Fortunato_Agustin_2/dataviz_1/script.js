@@ -9,8 +9,14 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
           fill: 'blue',
           fillOpacity: 0.5,
           sort: { y: "x" , reverse: true},
+          
         }),
       ],
+      style: {
+        fontFamily:"Robotoo",
+        fontSize:16,
+        color:"black",
+      },
       x: {
         grid: true,
       },
