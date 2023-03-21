@@ -8,7 +8,7 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
                 x: "anio_mision",
                 y: "mision_hs",
                 stroke: "genero",
-                strokeWidth: 1.7,
+                strokeWidth: 3,
                 curve: "linear"
             })
            

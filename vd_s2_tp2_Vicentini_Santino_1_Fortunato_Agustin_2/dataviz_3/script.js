@@ -20,8 +20,7 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
         height: 400,
         marginLeft: 50,
         width: 714
-      
-      
+        
     })
     // Agregamos chart al div#chart de index.html
     d3.select('#chart').append(() => chart)
