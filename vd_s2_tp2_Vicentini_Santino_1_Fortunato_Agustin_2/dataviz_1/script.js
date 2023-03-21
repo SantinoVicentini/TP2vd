@@ -1,11 +1,13 @@
 d3.csv('astronautas.csv', d3.autoType).then(data => {
-    console.log(data)
+    let eva_mision_hs_filtrado = data.filter(astronauta => astronauta.eva_mision_hs !== 0);
     // Guardamos el svg generado en la variable chart
     let chart = Plot.plot({
       marks: [
-        Plot.barX(data, {
+        Plot.barX(eva_mision_hs_filtrado, {
           x: 'eva_mision_hs',
           y: 'nombre',
+          fill: 'blue',
+          fillOpacity: 0.5,
           sort: { y: "x" , reverse: true},
         }),
       ],
@@ -15,8 +17,6 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
       height: 1800,
       marginLeft: 170,
 
-      x: { grid: true, line: true, zero: true, nice: true, },
-      y: { grid: true, line: true, zero: true, nice: true, },
     })
     // Agregamos chart al div#chart de index.html
     d3.select('#chart').append(() => chart)
