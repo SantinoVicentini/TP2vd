@@ -14,11 +14,19 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
            
           )
         ],
+        style: {
+          fontFamily:"arial",
+          fontSize:12,
+        },
+        x: {
+          label: 'Año (→)'
+        },
         y: {
             grid: true,
+            label: 'Hs En Mision, en miles (↑)'
           },
-        width: 714, 
-        height: 330, 
+        width: 715, 
+        height: 400, 
         x: { ticks: 3 }, 
         marginLeft: 50, 
         color: {

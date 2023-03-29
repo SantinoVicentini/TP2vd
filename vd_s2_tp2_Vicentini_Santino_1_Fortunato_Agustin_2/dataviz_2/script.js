@@ -15,14 +15,14 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
         label: 'Año (→)'
       },
       y: {
-        label: 'Cantidad Total Hs En Mision (→)' ,
-        labelOffset: 180,
+        label: 'Cantidad Total De Hs En Mision, en miles (↑)' ,
+        labelOffset: 50,
         grid: true,
       },
-      width: 1250,
-      height: 600,
-      marginLeft: 375,
-      marginTop: 90,
+      width: 900,
+      height: 550,
+      marginLeft: 50,
+      marginTop: 30,
   })
             
     d3.select('#chart').append(() => chart)

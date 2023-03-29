@@ -27,10 +27,11 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
         label: "Nombre (→) ",
         labelOffset: 180
       },
-      width: 1250,
-      height: 600,
-      marginLeft: 375,
-      marginTop: 90,
+      height: 500,
+      width: 900,
+      marginLeft: 200,
+      marginTop: 40,
+      marginBottom: 40,
     })
     // Agregamos chart al div#chart de index.html
     d3.select('#chart').append(() => chart)
