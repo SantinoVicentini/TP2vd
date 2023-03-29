@@ -1,6 +1,7 @@
 d3.csv('astronautas.csv', d3.autoType).then(data => {
     let eva_mision_hs_filtrado = data.filter(astronauta => astronauta.eva_mision_hs >= 15);
     // Guardamos el svg generado en la variable chart
+    
     let chart = Plot.plot({
       marks: [
         Plot.barX(eva_mision_hs_filtrado, {

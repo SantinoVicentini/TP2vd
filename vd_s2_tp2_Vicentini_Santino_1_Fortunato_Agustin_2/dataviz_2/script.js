@@ -7,16 +7,24 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
         Plot.lineY(data, Plot.groupX({y: "sum"}, {x: "anio_mision", y: "mision_hs", stroke: "#000", strokeWidth: 1})),
         Plot.ruleY([100000])
       ],
-      y: {
-        grid: true
+      style: {
+        fontFamily:"arial",
+        fontSize:12,
       },
-      height: 450,
-      marginLeft: 50,
-      width: 714
-    
+      x: {
+        label: 'Año (→)'
+      },
+      y: {
+        label: 'Cantidad Total Hs En Mision (→)' ,
+        labelOffset: 180,
+        grid: true,
+      },
+      width: 1250,
+      height: 600,
+      marginLeft: 375,
+      marginTop: 90,
   })
             
     d3.select('#chart').append(() => chart)
   })
 
-  
