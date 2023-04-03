@@ -8,7 +8,7 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
           Plot.groupX({ y: "sum" }, { 
               x: "nacionalidad", 
               y: "mision_hs",
-              fill: 'blue',
+              fill: '#333333',
               fillOpacity: 0.5,
               sort: { x: "y", reverse: true }, 
               filter: (d) => d.mision_hs >= 3000
