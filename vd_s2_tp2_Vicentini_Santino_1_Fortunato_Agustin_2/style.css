@@ -1,0 +1,50 @@
+body {
+  background-image: url('Background.webp');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+h1 {
+  font-size: 36px;
+  margin: 0;
+  padding: 50px 20px;
+  text-align: center;
+}
+a {
+  position: relative; 
+  display: block;
+  font-size: 24px;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #fff;
+  color: #333;
+  text-decoration: none;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: all 0.2s ease-in-out;
+}
+a:hover img {
+  opacity: 0; /* La imagen desaparece */
+  transition: opacity 0.5s ease-in-out;
+}
+a:hover p {
+  opacity: 1; /* El texto aparece */
+  transform: translateY(-20px); /* El texto se mueve hacia arriba */
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+a p {
+  opacity: 0; /* El texto está oculto */
+  position: absolute; /* Añade posición absoluta para poder manipular la posición */
+  top: 50%; /* Alinea el texto en el centro vertical */
+  left: 43%; /* Alinea el texto en el centro horizontal */
+  transform: translate(-50%, -50%); /* Centra el texto */
+}
