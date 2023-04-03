@@ -18,12 +18,12 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
       fontSize:12,
     },
     x: {
-      label: 'Año (→)'
+      label: 'Año (→)',
     },
     y: {
       grid: true,
       label: 'Hs En Mision, en miles (↑)',
-      tickFormat: d => ${d / 1000}
+      tickFormat: (d) => d/1000
     },
     width: 715, 
     height: 400, 
