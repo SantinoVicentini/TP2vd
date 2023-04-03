@@ -7,7 +7,7 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
         Plot.barX(eva_mision_hs_filtrado, {
           x: 'eva_mision_hs',
           y: 'nombre',
-          fill: 'blue',
+          fill: '#333333',
           fillOpacity: 0.5,
           sort: { y: "x" , reverse: true},
           
