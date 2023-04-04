@@ -31,7 +31,7 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
       Plot.text(data.filter(d => d.mision_hs === maxMisionHs), {
         x: "anio_mision",
         y: "mision_hs",
-        text: d => '79000 hs en mision',
+        text: d => '78325 hs en mision',
         textAnchor: "start",
         dx: 15,
         dy: -340 // Mover el texto hacia arriba
