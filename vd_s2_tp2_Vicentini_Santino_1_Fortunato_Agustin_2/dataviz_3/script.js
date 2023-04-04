@@ -25,7 +25,7 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
         label: 'Nacionalidad (→)'
       },
       y:{
-        label: 'Cantidad Total De Hs En Evacuacion Mision, en miles (↑)',
+        label: 'Cantidad Total De Hs En Mision, en miles (↑)',
         grid: true,
         tickFormat: (d) => d/1000 
       },
