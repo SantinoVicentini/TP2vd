@@ -1,3 +1,6 @@
+# INTRODUCCION:
+- En este trabajo buscamos mediante simplicidad y sencillez visualizar los datos de los astronautas. Para esto realizamos 4 graficos siguiendo estandares para lograr una concreta y buena visualizacion.
+
 ## 1) Tipologia de los datos que usamos:
 - CATEGORICOS/NOMINALES:  nombre genero nacionalidad
 - ORDINALES:  anio_nacimiento anio_mision mision_hs eva_mision_hs
