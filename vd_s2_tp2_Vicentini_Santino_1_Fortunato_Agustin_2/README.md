@@ -1,5 +1,5 @@
 # INTRODUCCIÓN:
-- En este trabajo buscamos, mediante simplicidad y sencillez, visualizar los datos de los astronautas. Para ello, realizamos 4 gráficos siguiendo estándares para lograr una buena visualización.
+-En este trabajo buscamos, mediante simplicidad y sencillez, visualizar los datos de los astronautas. Para ello, realizamos 4 gráficos siguiendo estándares para lograr una buena visualización.
 
 ## 1) Tipología de los datos que utilizamos:
 
